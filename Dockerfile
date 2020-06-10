@@ -5,7 +5,7 @@ COPY ./cputil-linux-x64_v100.tar.gz /tmp/
 #COPY ./hello.php /var/www/html/
 
 RUN \
-  && mkdir -p /opt/starmicronics/cputil \
+  mkdir -p /opt/starmicronics/cputil \
   && tar -zxvf /tmp/cputil-linux-x64_v100.tar.gz -C /opt/starmicronics/cputil/ \
   && chmod 755 /opt/starmicronics/cputil/cputil-linux-x64/cputil \
   && ln -s /opt/starmicronics/cputil/cputil-linux-x64/cputil /usr/local/bin/cputil \

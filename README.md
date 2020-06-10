@@ -1,11 +1,11 @@
 ```bash
-docker build -t apache-php .
+docker build -t cloudprnt .
 ```
 
 ```bash
-docker run -dit -p 8080:80 apache-php
+docker run -dit -p 4000:80 cloudprnt
 ```
 
-https://localhost:8080/php_queue/management.html
+https://localhost:4000/php_queue/management.html
 
 
